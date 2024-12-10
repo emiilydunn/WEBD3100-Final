@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
     <title>Emily Dunn</title>
-    <link rel="icon" type="image/x-icon" href="public/icons8-star-48.png">
+    <link rel="icon" type="image/x-icon" href="public/icons/icons8-star-48.png">
 </head>
-<body class="bg-custom-bg">
+
+<body class="bg-custom-bg scroll-smooth">
     <!-- Outer Navbar Box -->
-    <div class="bg-custom-bg text-custom-brown border-2 border-custom-brown w-full h-[15vh]">
+    <div id="top" class="bg-custom-bg text-custom-brown border-2 border-custom-brown w-full h-[15vh]">
         <div class="flex h-full">
             <!-- Left Box (Emily Dunn) -->
             <div class="flex-none border-r-2 border-custom-brown flex items-center justify-start px-4 flex-grow h-full">
@@ -20,13 +21,14 @@
             <!-- Right Box Container -->
             <div class="flex h-full">
                 <!-- Home Box (Narrower) -->
-                <div class="flex-none border-r-2 border-custom-brown flex items-center justify-center px-4 w-[10vw] h-full">
-                    <span class="font-Harmonia font-bold text-2xl text-custom-brown">home</span>
+                <div
+                    class="flex-none border-r-2 border-custom-brown flex items-center justify-center px-4 w-[10vw] h-full">
+                    <a href="#top" class="font-Harmonia font-bold text-2xl text-custom-brown">home</a>
                 </div>
 
                 <!-- Portfolio Box (Narrower) -->
                 <div class="flex-none flex items-center justify-center px-4 w-[10vw] h-full">
-                    <span class="font-Harmonia font-bold text-2xl text-custom-brown">projects</span>
+                    <a href="#projects" class="font-Harmonia font-bold text-2xl text-custom-brown">projects</a>
                 </div>
             </div>
         </div>
@@ -34,34 +36,138 @@
 
     <!-- Split Screen Section Below Navbar -->
     <div class="flex h-[85vh]">
-        <!-- Left Side Content with different background -->
-        <div class="w-1/2 h-full bg-blue-500 flex items-center justify-center text-white">
-            <div>
-                <h2 class="text-4xl font-bold">Left Side</h2>
-                <p>This is the left content with a blue background.</p>
+        <!-- Left Side -->
+        <div class="w-1/2 h-full bg-custom-bg flex flex-col items-start justify-start relative px-8 py-6 ml-6">
+            <!-- Peachy icon -->
+            <img src="public/images/peach-icon.png" alt="peachy-icon" class="w-2/3 h-auto rounded-lg mb-4">
+
+            <!-- Text -->
+            <div
+                class="absolute top-[10%] left-0 transform translate-x-0 translate-y-0 text-left text-custom-brown p-4 rounded-md w-full">
+                <h2 class="text-5xl font-Harmonia font-bold mb-2 ms-8 mt-1">Hi, I'm Emily!</h2>
+                <p class="text-2xl font-Harmonia font-bold ms-8 mt-5">Welcome to my portfolio!</p>
+
+                <p class="text-2xl font-Harmonia font-bold ms-8 mt-24 text-custom-brown">
+                    I'm an IT Web Programming Student</br>at NSCC. I love to create accessible </br>and aesthetic
+                    user-friendly websites.</br>
+                    I love solving puzzles of all kinds, </br> which prompted me to start learning front-end
+                    development.
+                </p>
             </div>
         </div>
 
-        <!-- Right Side Content with different background -->
-        <div class="w-1/2 h-full bg-green-500 flex items-center justify-center text-white">
-            <div>
-                <h2 class="text-4xl font-bold">Right Side</h2>
-                <p>This is the right content with a green background.</p>
-            </div>
+        <!-- Right side  -->
+        <div class="w-1/2 h-full bg-custom-bg flex items-center justify-center text-white">
+            <img src="/public/images/Untitled design.png" alt="Photo" class="w-3/4 h-auto">
         </div>
     </div>
 
-    <!-- Content below -->
-    <h1 class="font-sans text-3xl underline text-red-900">
-        Hello world!
-    </h1>
-
-    <div class="font-harmonia font-bold text-green-700">
-        This text will use Harmonia (bold, green).
+    <!-- Bottom Border Image -->
+    <div class="w-full h-[100px]"
+        style="background-image: url('./public/images/squares.png'); background-repeat: no-repeat; background-position: center; background-size: auto;">
     </div>
+<!-- Projects Section -->
+<div id="projects" class="bg-custom-bg text-custom-brown w-full py-16 px-8">
+    <h2 class="text-6xl font-Lydian mb-12 border-b border-custom-brown pb-7">Projects</h2>
 
-    <div class="font-Lydian text-blue-700">
-        This text will use Lydian.
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-start">
+
+        <!-- SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+            </symbol>
+        </svg>
+
+        <!-- Project 1 -->
+        <div class="flex flex-col items-center justify-center border-r border-custom-brown p-6">
+            <img src="./public/images/nscc-redesign.jpg" alt="NSCC Redesign" class="w-2/3 h-auto object-cover mb-4">
+            <h3 class="text-2xl font-Harmonia font-bold text-custom-brown mb-2">NSCC Homepage Redesign</h3>
+
+            <p class="text-l font-Harmonia font-bold">
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> Figma
+                </span>
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> Bootstrap
+                </span>
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> HTML & CSS
+                </span>
+            </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="flex flex-col items-center justify-center border-r border-custom-brown p-6">
+            <img src="./public/images/apple-new.png" alt="Apple clone" class="w-2/3 h-auto object-cover mb-4">
+            <h3 class="text-2xl font-Harmonia text-custom-brown mb-2 font-bold">Apple.ca Clone</h3>
+
+            <p class="text-l font-Harmonia font-bold">
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> HTML & CSS
+                </span>
+            </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="flex flex-col items-center justify-center p-6">
+            <img src="./public/images/stardew-app-new.png" alt="Stardew React App" class="w-2/3 h-auto object-cover mb-4">
+            <h3 class="text-2xl font-Harmonia font-bold text-custom-brown mb-2">Stardew React App</h3>
+
+            <p class="text-l font-Harmonia font-bold">
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> Bootstrap
+                </span>
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> HTML & CSS
+                </span>
+                <span class="flex items-center">
+                    <svg class="w-6 h-6 text-custom-brown mr-2">
+                        <use href="#icon-arrow"></use>
+                    </svg> Javascript & React
+                </span>
+            </p>
+        </div>
     </div>
+</div>
+
+<!-- Footer Box -->
+<div class="bg-custom-footer w-full h-[100px] flex items-center justify-center">
+    <p class="text-custom-brown font-Harmonia font-bold text-xl">Copyright &copy; Emily Dunn | 2024 </p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="custom-brown" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+      </svg>
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Icon/01 XL - XS/03 social/04 linkedin/01 enabled</title>
+          <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Footer/01-XL/01-default" transform="translate(-337.000000, -523.000000)">
+                  <g id="Icon/01-XL---XS/03-social/04-linkedin/01-enabled" transform="translate(337.000000, 523.000000)">
+                      <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                      <path d="M18.3856762,9 C21.5298043,9 24,10.994585 24,15.2896088 L24,23 L18.9835409,23 L18.9835409,15.8241994 C18.9835409,13.9459434 18.1988434,12.6637102 16.4733096,12.6637102 C15.1534698,12.6637102 14.419484,13.5289889 14.077847,14.362898 C13.9680351,14.6194566 13.9670546,14.9624418 13.9690155,15.3177736 L13.9697509,23 L9,23 L9.00082341,22.8322851 C9.00809683,21.329558 9.0597141,10.2104331 9,9.13332089 L13.9697509,9.13332089 L13.9697509,11.3095883 C14.2633452,10.3580431 15.8514235,9 18.3856762,9 Z M6,9 L6,23 L1,23 L1,9 L6,9 Z M3.52261431,0 C5.6500994,0 6.9582505,1.50611247 7,3.49714751 C7,5.45205107 5.6500994,7 3.48260437,7 L3.44085487,7 C1.35337972,7 0,5.45775604 0,3.50285249 C0,1.50991578 1.39338966,0 3.52261431,0 Z" id="Combined-Shape" fill="#2D2D2C" fill-rule="evenodd"></path>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      
+</div>
+
 </body>
+
 </html>
