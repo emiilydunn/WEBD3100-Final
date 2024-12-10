@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <title>Emily Dunn</title>
+    <link rel="icon" type="image/x-icon" href="public/icons8-star-48.png">
 </head>
-<body>
-    
+<body class="bg-custom-bg">
+    <!-- Outer Navbar Box -->
+    <div class="bg-custom-bg text-custom-brown border-2 border-custom-brown w-full h-[15vh]">
+        <div class="flex h-full">
+            <!-- Left Box (Emily Dunn) -->
+            <div class="flex-none border-r-2 border-custom-brown flex items-center justify-start px-4 flex-grow h-full">
+                <span class="font-Lydian text-7xl text-custom-brown">Emily Dunn</span>
+            </div>
+
+            <!-- Right Box Container -->
+            <div class="flex h-full">
+                <!-- Home Box (Narrower) -->
+                <div class="flex-none border-r-2 border-custom-brown flex items-center justify-center px-4 w-[10vw] h-full">
+                    <span class="font-Harmonia font-bold text-2xl text-custom-brown">home</span>
+                </div>
+
+                <!-- Portfolio Box (Narrower) -->
+                <div class="flex-none flex items-center justify-center px-4 w-[10vw] h-full">
+                    <span class="font-Harmonia font-bold text-2xl text-custom-brown">projects</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Split Screen Section Below Navbar -->
+    <div class="flex h-[85vh]">
+        <!-- Left Side Content with different background -->
+        <div class="w-1/2 h-full bg-blue-500 flex items-center justify-center text-white">
+            <div>
+                <h2 class="text-4xl font-bold">Left Side</h2>
+                <p>This is the left content with a blue background.</p>
+            </div>
+        </div>
+
+        <!-- Right Side Content with different background -->
+        <div class="w-1/2 h-full bg-green-500 flex items-center justify-center text-white">
+            <div>
+                <h2 class="text-4xl font-bold">Right Side</h2>
+                <p>This is the right content with a green background.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content below -->
+    <h1 class="font-sans text-3xl underline text-red-900">
+        Hello world!
+    </h1>
+
+    <div class="font-harmonia font-bold text-green-700">
+        This text will use Harmonia (bold, green).
+    </div>
+
+    <div class="font-Lydian text-blue-700">
+        This text will use Lydian.
+    </div>
 </body>
 </html>
